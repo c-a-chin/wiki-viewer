@@ -56,7 +56,22 @@ h1 {
 	animation-name: backgoundColor;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
-	height: 100vh;
+}
+#random {
+	text-align: center;
+  font-family: 'Lobster', cursive;
+	position: absolute;
+	top: 12vh;
+	width: 30rem;
+	left: 50%;
+	margin-left: -9rem;
+  z-index: 1;
+}
+#random > a {
+  color: white;
+}
+#random > a:hover {
+  text-decoration: none;
 }
 
 /* row containing search icon/input search bar */
@@ -134,15 +149,17 @@ img:hover {
 	text-align: left;
 	position: absolute;
 	font-weight: bold;
-	max-width: 20vw;
+    max-width: 20vw;
+    overflow: hidden;
 }
 .result > p {
+	font-size: 18px;
 	position: absolute;
 	text-align: right;
 	left: 45%;
 	max-width: 30vw;
 	max-height: 6vh;
-	overflow-y: scroll;
+	overflow: hidden;
 }
 
 .link {
@@ -165,20 +182,6 @@ img:hover {
 }
 
 
-#random > a {
-	position: absolute;
-	top: 50%;
-	left: 2%;
-	max-width: 10%;
-	z-index: 1;
-	color: white;
-}
-#random > a:hover{
-  text-decoration: none;
-  font-weight: bold;
-}
-
-
 
 /* for phone specific styles */
 @media only screen and (max-width: 600px) {
@@ -188,8 +191,10 @@ img:hover {
     .result > h5 {
     	width: 50%;
     	max-width: 50%;
+        margin-left: 10%;
     }
 
+  
     .no-results {
     	font-weight: bold;
 		font-size: 3rem;
@@ -206,4 +211,17 @@ img:hover {
     	position: absolute;
     	left: 70%;
     }
+  
+    #random {
+      text-align: center;
+      font-family: 'Lobster', cursive;
+      position: absolute;
+      top: 9vh;
+      width: 15rem;
+      left: 65%;
+    }
+  
+  input {
+    width: 25%;
+  }
 }
