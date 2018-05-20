@@ -27,6 +27,7 @@ function shrinkInput(){
 						$("input").focusout();
 						// clear previous results
 						$(".result").remove();
+						$(".no-results").remove();
 						searchWiki($("input").val());
 					}
 				})
